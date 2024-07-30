@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <script src="dashboardscript.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="logocontainer">
+                <img class="logo" src="images/logo2.png" alt="logo">
+            </div>
+            <ul>
+                <li><a href="dashboard.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+                <li><a href="Attendance.html"><i class="fas fa-calendar-check"></i> Attendance</a></li>
+                <li><a href=""><i id="seticon" class="fas fa-cog"></i> Setting</a></li>
+            </ul>
+            <ul>
+                <li><a class="logout" href=""><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+            </ul>
+        </div>
+        <!-- sidebardivend -->
+        <div class="maincontent">
+            <header class="mainheader">
+                <div class="header-icons">
+                    <i class="fas fa-bell"></i>
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <div class="profile">
+                    <img src="images/pic.png" alt="Profile Picture">
+                    <span>Haseeb</span>
+                </div>
+            </header>
+            <!-- header div end -->
+            <div class="report">
+                <div class="report123">
+                    <div class="week">
+                        <h1>Weekly</h1>
+                        <p class="Thours1">
+                            <span>Total Hour:</span>
+                            <span>Total Absent: </span>
+                            <span>Hours left: </span>
+
+
+                        </p>
+                        <P class="Thours1">
+                            <span id="weeklyTotalHours"></span>
+                            <span id="weeklyTotalAbsent"></span>
+                            <span id="weeklyHoursLeft"></span>
+
+
+                        </p>
+                    </div>
+                    <div class="month">
+                        <h1>Weekly</h1>
+                        <p class="Thours2">
+                            <span>Total Hour:</span>
+                            <span>Total Absent: </span>
+                            <span>Hours left: </span>
+
+
+                        </p>
+                        <P class="Thours2">
+                            <span id="monthlyTotalHours"></span>
+                            <span id="monthlyTotalAbsent"></span>
+                            <span id="monthlyHoursLeft"></span>
+
+
+                        </p>
+                    </div>
+                    <div class="year">
+                        <h1>Yearly</h1>
+                        <p class="Thours3">
+                            <span>Total Hour:</span>
+                            <span>Total Absent: </span>
+                            <span>Hours left: </span>
+
+
+                        </p>
+                        <P class="Thours3">
+                            <span id="yearlyTotalHours"></span>
+                            <span id="yearlyTotalAbsent"></span>
+                            <span id="yearlyHoursLeft"></span>
+
+
+                        </p>
+                    </div>
+                </div>
+                <!-- reports div end -->
+                <div class="chart">
+                    <div class="round">
+                        <div class="chart-header">
+                            <h1>Hour Graph</h1>
+                            <select id="thisWeekDropdown">
+                                <option value="thisWeek">This Week</option>
+                                <option value="lastWeek">Last Week</option>
+                                <option value="2weeksAgo">2 Weeks Ago</option>
+                            </select>
+                        </div>
+                        <div id="hourLabels"></div>
+                        <canvas id="myDonutChart" width=""></canvas>
+                    </div>
+                    <div class="straight">
+                        <div class="chart-header">
+                            <h1>Summary</h1>
+                            <span>Hours</span>
+                            <select id="last7DaysDropdown">
+                                <option value="last7Days">Last 7 Days</option>
+                                <option value="last14Days">Last 14 Days</option>
+                                <option value="last30Days">Last 30 Days</option>
+                            </select>
+                        </div>
+                        <canvas id="myBarChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="dashboard.js"></script>
+</body>
+
+</html>

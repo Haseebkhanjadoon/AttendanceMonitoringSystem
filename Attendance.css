@@ -1,0 +1,308 @@
+body {
+    background-color: rgb(195, 195, 195);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 300px auto;
+    height: 100vh;
+    grid-gap: 20px;
+}
+
+.sidebar {
+    background-color: rgb(24, 65, 104);
+}
+
+.logocontainer {
+    z-index: 1;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    width: 180px;
+}
+
+ul {
+    list-style-type: none;
+    margin: opx;
+    padding: 0px;
+}
+
+ul a {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    color: aliceblue;
+}
+
+a:hover {
+    color: black;
+}
+
+a {
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 420px;
+}
+
+.logout {
+    margin-top: 420px;
+}
+
+.maincontainer {
+    display: grid;
+    grid-template-rows: 80px 100px 200px 250px;
+    grid-gap: 15px;
+    margin-top: 0;
+}
+
+.reportss {
+    background-color: rgb(195, 195, 195);
+}
+
+.checkinnn {
+    background-color: white;
+}
+
+.monthlyyy {
+    background-color: white;
+}
+
+.mainheader {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgb(195, 195, 195);
+    height: 80px;
+}
+
+.mainheader .profile {
+    display: flex;
+    align-items: center;
+}
+
+.mainheader .profile img {
+    width: 60px;
+    height: 60px;
+    border-radius: 20%;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+
+.mainheader .profile span {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+/* headercss end; */
+.Thours1 {
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Thours2 {
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.Thours3 {
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+}
+.Thours1 span,
+.Thours2 span,
+.Thours3 span{
+    font-weight: bold;
+}
+
+
+.report123 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 100px;
+    grid-gap: 25px;
+
+}
+
+.week {
+    background-color: white;
+    border: 1px solid white;
+    border-width: 2px;
+    border-radius: 10px;
+    padding: 11px;
+}
+
+.month {
+    background-color: white;
+    border: 1px solid white;
+    border-width: 2px;
+    border-radius: 10px;
+    padding: 11px;
+}
+
+.year {
+    background-color: white;
+    border: 1px solid white;
+    border-width: 2px;
+    border-radius: 10px;
+    padding: 11px;
+}
+
+h1 {
+    font-size: 25px;
+    margin: 0;
+    color: orange;
+}
+
+.chkins {
+    display: grid;
+    grid-template-rows: 200px;
+}
+
+.monthly {
+    display: grid;
+    grid-template-rows: 200px;
+}
+
+th {
+    border-collapse: collapse;
+    background-color: rgb(24, 65, 104);
+    padding: 10px;
+    text-align: left;
+    color: aliceblue;
+}
+
+table,
+th,
+td {
+    border-collapse: collapse;
+}
+
+.table-container {
+    width: 100%;
+    overflow-y: auto;
+}
+
+table {
+    width: 100%;
+}
+
+.right {
+    float: right;
+}
+
+.left {
+    font-style: bold;
+    font-size: 20px;
+    display: inline-flex;
+    margin: 10px;
+}
+
+#checkInOutButton {
+    font-size: 15px;
+    background-color: orange;
+    color: aliceblue;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 12px;
+    height: 35px;
+    width: 120px;
+    margin: 2px;
+}
+
+#search {
+    border-radius: 10px;
+    margin-right: 5px;
+    width: 200px;
+    height: 20px;
+}
+
+#dateFilter {
+    border-radius: 10px;
+    margin-right: 5px;
+    width: 200px;
+    height: 20px;
+    margin-bottom: 5px;
+}
+
+#searchMonthly {
+    border-radius: 10px;
+    margin-right: 5px;
+    width: 200px;
+    height: 20px;
+}
+
+#dateFilterMonthly {
+    border-radius: 10px;
+    margin-right: 5px;
+    width: 200px;
+    height: 20px;
+    margin-top: 10px;
+}
+
+#monthdropdown1 {
+    font-style: bold;
+    color: orange;
+}
+
+#monthDropdown {
+    margin-left: 10px;
+    border-radius: 10px;
+}
+
+.header-icons {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.header-icons i {
+    margin-right: 10px;
+    font-size: 30px;
+    cursor: pointer;
+    color: rgb(24, 65, 104);
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+}
+
+.profile img {
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.sidebar ul li a {
+    display: flex;
+    align-items: center;
+}
+
+.sidebar ul li a i {
+    margin-right: 10px;
+}
+#filterrecord{
+    font-size: 15px;
+    background-color: orange;
+    color: aliceblue;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 12px;
+    height: 35px;
+    width: 120px;
+    margin: 2px;
+}

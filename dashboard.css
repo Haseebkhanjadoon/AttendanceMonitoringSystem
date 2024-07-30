@@ -1,0 +1,277 @@
+body {
+    background-color: rgb(195, 195, 195);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 300px auto;
+    height: 100vh;
+    grid-gap: 60px;
+}
+
+.sidebar {
+    background-color: rgb(24, 65, 104);
+
+}
+
+.maincontent {
+    display: grid;
+    grid-template-rows: 80px 200px 200px;
+    margin-top: 0px;
+}
+
+.report {
+    background-color: rgb(195, 195, 195);
+
+}
+
+.chart {
+    background-color: rgb(195, 195, 195);
+}
+
+.report123 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 100px;
+    grid-gap: 25px;
+
+}
+
+.week {
+    background-color: white;
+    border: 1px solid white;
+    border-width: 2px;
+    border-radius: 10px;
+    padding: 11px;
+}
+
+.month {
+    background-color: white;
+    border: 1px solid white;
+    border-width: 2px;
+    border-radius: 10px;
+    padding: 11px;
+}
+
+.year {
+    background-color: white;
+    border: 1px solid white;
+    border-width: 2px;
+    border-radius: 10px;
+    padding: 11px;
+}
+
+.chart {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 40px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.round,
+.straight {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.round {
+    width: 100%;
+    height: 350px;
+}
+
+.straight {
+    width: 100%;
+    height: 350px;
+}
+
+
+.logocontainer {
+    z-index: 1;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    width: 180px;
+}
+
+ul {
+    list-style-type: none;
+    margin: opx;
+    padding: 0px;
+}
+
+ul a {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    color: aliceblue;
+}
+
+.logout {
+    margin-top: 420px;
+}
+
+a:hover {
+    color: black;
+}
+
+a {
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 420px;
+}
+
+h1 {
+    font-size: 25px;
+    margin: 0;
+    color: orange;
+}
+
+.Thours1 {
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Thours1 span,
+.Thours2 span,
+.Thours3 span{
+    font-weight: bold;
+}
+
+.Thours2 {
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.Thours3 {
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.round,
+.straight {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.chart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.chart-header h1 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.chart-header span {
+    font-size: 0.9em;
+}
+
+#thisWeek,
+#last7Days {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#hourLabels {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.mainheader {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgb(195, 195, 195);
+    height: 80px;
+}
+
+.mainheader .profile {
+    display: flex;
+    align-items: center;
+}
+
+.mainheader .profile img {
+    width: 50px;
+    height: 50px;
+    border-radius: 20%;
+    margin-right: 10px;
+    margin-bottom: 15px;
+}
+
+.mainheader .profile span {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+
+#myDonutChart {
+    width: 350px !important;
+    height: auto !important;
+    margin-left: 40px;
+}
+
+.header-icons {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.header-icons i {
+    margin-right: 10px;
+    font-size: 30px;
+    cursor: pointer;
+    color: rgb(24, 65, 104);
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+}
+
+.profile img {
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.sidebar ul li a {
+    display: flex;
+    align-items: center;
+}
+
+.sidebar ul li a i {
+    margin-right: 10px;
+}
+
+.chart-header select {
+    margin-left: 10px;
+    padding: 5px;
+    font-size: 10px;
+    background-color: rgb(41, 87, 130);
+    color: #f0f0f0;
+}

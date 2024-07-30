@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance</title>
+    <link rel="stylesheet" href="Attendance.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="logocontainer">
+                <img class="logo" src="images/logo2.png" alt="logo">
+            </div>
+            <ul>
+                <li><a href="dashboard.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+                <li><a href="Attendance.html"><i class="fas fa-calendar-check"></i> Attendance</a></li>
+                <li><a href=""><i id="seticon" class="fas fa-cog"></i> Setting</a></li>
+            </ul>
+            <ul>
+                <li><a class="logout" href=""><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+            </ul>
+        </div>
+        <div class="maincontainer">
+            <div class="headerr">
+                <header class="mainheader">
+                    <div class="header-icons">
+                        <i class="fas fa-bell"></i>
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="profile">
+                        <img src="images/pic.png" alt="Profile Picture">
+                        <span>Haseeb</span>
+                    </div>
+                </header>
+            </div>
+            <div class="reportss">
+                <div class="report123">
+                    <div class="week">
+                        <h1>Weekly</h1>
+                        <p class="Thours1">
+                            <span>Total Hour:</span>
+                            <span>Total Absent: </span>
+                            <span>Hours left: </span>
+
+
+                        </p>
+                        <P class="Thours1">
+                            <span id="weeklyTotalHours"></span>
+                            <span id="weeklyTotalAbsent"></span>
+                            <span id="weeklyHoursLeft"></span>
+
+
+                        </p>
+                        
+                    </div>
+                    <div class="month">
+                        <h1>Monthly</h1>
+                        <p class="Thours2">
+                            <span>Total Hour:</span>
+                            <span>Total Absent: </span>
+                            <span>Hours left: </span>
+
+
+                        </p>
+                        <P class="Thours2">
+                            <span id="monthlyTotalHours"></span>
+                            <span id="monthlyTotalAbsent"></span>
+                            <span id="monthlyHoursLeft"></span>
+
+
+                        </p>
+                    </div>
+                    <div class="year">
+                        <h1>Yearly</h1>
+                        <p class="Thours3">
+                            <span>Total Hour:</span>
+                            <span>Total Absent: </span>
+                            <span>Hours left: </span>
+
+
+                        </p>
+                        <P class="Thours3">
+                            <span id="yearlyTotalHours"></span>
+                            <span id="yearlyTotalAbsent"></span>
+                            <span id="yearlyHoursLeft"></span>
+
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="checkinnn">
+                <div class="action-row">
+                    <div class="left">
+                        <span id="name"></span>
+                    </div>
+                    <div class="right">
+                        
+                        <button id="checkInOutButton" onclick="handleCheckInOut()">Check In</button>
+                    </div>
+                </div>
+                <div class="table-container1">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th>Check In</th>
+                                <th>Check Out</th>
+                                <th>Total Hours</th>
+                                <th>Hours Left</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody id="attendanceTableBody">
+                            <!-- Attendance data will be appended here -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="monthlyyy">
+                <div class="action-row">
+                    <div class="left">
+                        <span id="monthdropdown1">Month:</span>
+                        <select id="monthDropdown">
+                            <option value="January">January</option>
+                            <option value="February">February</option>
+                            <option value="March">March</option>
+                            <option value="April">April</option>
+                            <option value="May">May</option>
+                            <option value="June">June</option>
+                            <option value="July">July</option>
+                            <option value="August">August</option>
+                            <option value="September">September</option>
+                            <option value="October">October</option>
+                            <option value="November">November</option>
+                            <option value="December">December</option>
+                        </select>
+                    </div>
+                    <div class="right">
+                        <!-- <input type="text" id="searchMonthly" placeholder="Search..."> -->
+                        <!-- <input type="date" id="dateFilterMonthly"> -->
+                         <button id="filterrecord">filter</button>
+                    </div>
+                </div>
+                <div class="monthly">
+                    <div class="table-container">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Employee Name</th>
+                                    <th>Date</th>
+                                    <th>Check In</th>
+                                    <th>Check Out</th>
+                                    <th>Total Hours</th>
+                                    <th>Present</th>
+                                    <th>Absent</th>
+                                    <th>Hours Left</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody id="monthlyAttendanceTableBody">
+                                <!-- Monthly attendance data will be appended here -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="attendance.js"></script>
+</body>
+
+</html>
