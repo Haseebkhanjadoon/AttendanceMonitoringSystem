@@ -9,7 +9,7 @@ function handleCheckInOut() {
     const action = button.innerText === 'Check In' ? 'checkin' : 'checkout';
 
     const payload = {
-        employee_id: "78",
+        employee_id: "101",
         action: action
     };
 
